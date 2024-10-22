@@ -1,5 +1,23 @@
-plugins {
-    id 'java-library'
+apply plugin: 'com.android.library'
+
+android {
+    namespace = 'com.swerve.driver'
+
+    lint {
+        disable 'ExpiredTargetSdkVersion'
+    }
+
+    defaultConfig {
+        minSdkVersion 24
+        targetSdkVersion 28
+    }
+
+    compileSdkVersion 29
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 java {
@@ -7,6 +25,15 @@ java {
     targetCompatibility = JavaVersion.VERSION_1_8
 }
 
+repositories {
+    mavenCentral()
+    google() // Needed for androidx
+    maven { url 'https://jitpack.io' }
+}
+
 dependencies {
-    compileOnly 'org.firstinspires.ftc:RobotCore:10.0.0'
+    compileOnly 'org.firstinspires.ftc:RobotCore:10.1.0'
+    compileOnly 'org.firstinspires.ftc:RobotServer:10.1.0'
+    compileOnly 'org.firstinspires.ftc:Hardware:10.1.0'
+    compileOnly 'org.firstinspires.ftc:FtcCommon:10.1.0'
 }
