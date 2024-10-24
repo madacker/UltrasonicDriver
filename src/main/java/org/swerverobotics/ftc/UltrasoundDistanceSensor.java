@@ -1,4 +1,4 @@
-package org.inventors.ftc;
+package org.swerverobotics.ftc;
 
 import com.qualcomm.robotcore.hardware.I2cAddr;
 import com.qualcomm.robotcore.hardware.I2cDeviceSynchDevice;
