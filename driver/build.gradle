@@ -32,8 +32,9 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'org.firstinspires.ftc:RobotCore:10.1.0'
-    compileOnly 'org.firstinspires.ftc:RobotServer:10.1.0'
-    compileOnly 'org.firstinspires.ftc:Hardware:10.1.0'
-    compileOnly 'org.firstinspires.ftc:FtcCommon:10.1.0'
+    implementation 'org.firstinspires.ftc:RobotCore:10.1.0'
+    implementation 'org.firstinspires.ftc:RobotServer:10.1.0'
+    implementation 'org.firstinspires.ftc:Hardware:10.1.0'
+    implementation 'org.firstinspires.ftc:FtcCommon:10.1.0'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
 }
