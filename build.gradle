@@ -24,6 +24,15 @@ allprojects {
     }
 }
 
+subprojects {
+    apply plugin: 'maven-publish'
+    group = 'com.github.madacker'
+
+    repositories{
+        google()
+    }
+}
+
 repositories {
     mavenCentral()
 }
