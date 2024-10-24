@@ -17,13 +17,11 @@ public class UltrasoundDistanceSensor extends I2cDeviceSynchDevice<I2cDeviceSync
     }
 
     @Override
-    protected boolean doInitialize() {
-        return false;
-    }
+    protected boolean doInitialize() { return true; }
 
     @Override
     public Manufacturer getManufacturer() {
-        return null;
+        return Manufacturer.SparkFun;
     }
 
     @Override
